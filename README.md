@@ -28,8 +28,7 @@ Yami-Yami City 用の BepInEx 6 IL2CPP mod です。
 | キー | 機能 |
 | --- | --- |
 | F8 | 男/局部非表示 ON/OFF |
-| F9 | フリーカメラ ON/OFF |
-| F10 | シーン dump 作成 |
+| F9 | フリーカメラ ON/OFF 
 | F12 | シーンライト ON/OFF |
 
 ## フリーカメラ操作
