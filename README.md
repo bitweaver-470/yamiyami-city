@@ -7,7 +7,6 @@ Yami-Yami City 用の BepInEx 6 IL2CPP mod です。
 - Yami-Yami City / Unity 6000.2.6f2
 - BepInEx 6 IL2CPP win-x64 `6.0.0-be.755` 以降推奨
 
-古い `be.752` では Unity 6 IL2CPP / metadata 31.1 周りで BepInEx 起動時に落ちることがあります。
 この環境では `be.755` へ更新し、`BepInEx/config/BepInEx.cfg` の `UnityLogListening = false` で動作確認しています。
 
 ## インストール
@@ -69,26 +68,7 @@ RequireMouseButtonForLook = true
 ToggleKey = F12
 ToggleLightMeshes = true
 
-[Dump]
-DumpKey = F10
 ```
 
 `ContinuousScan = false` のため、男/局部非表示は F8 を押した瞬間だけスキャンします。
 新しくロードされた対象を消したい場合は F8 を押し直してください。
-
-## Dump 出力
-
-F10 を押すと以下に scene dump を出力します。
-
-```text
-BepInEx/scene-dumps/
-```
-
-Light、Camera、Renderer、GameObject、Material、Shader、Component の名前と階層を出します。
-対象が消えない場合や特殊なライトを追加で特定したい場合に使います。
-
-## 注意
-
-- `YamiYamiNoMosaic.dll` は起動後も一定間隔でモザイク候補をスキャンします。
-- `YamiYamiUtilityMods.dll` の男/局部非表示は常駐スキャンしない設定にしてあります。
-- マウス感度補正は挙動が不安定だったため、初期設定では無効です。
